@@ -87,9 +87,10 @@ body {
   z-index: -2;
   background-image: url('assets/images/photo_2026-09-29_20-46-35.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  will-change: transform;
 }
 
 /* Light overlay for readability - very subtle */
@@ -99,12 +100,37 @@ body {
   z-index: -1;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(0, 0, 0, 0.15) 40%,
-    rgba(0, 0, 0, 0.35) 100%
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.25) 40%,
+    rgba(0, 0, 0, 0.55) 100%
   );
   pointer-events: none;
 }
+
+/* Fix background-attachment:fixed — broken on iOS Safari & most mobile browsers */
+@media (max-width: 768px) {
+  .bg-slideshow {
+    background-attachment: scroll;
+    background-position: 30% top;
+    background-size: cover;
+    /* Use CSS transform trick for parallax feel without broken fixed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.35) 50%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+  }
+}
+
 
 ::selection {
   background: hsl(var(--primary-glow) / 0.35);
