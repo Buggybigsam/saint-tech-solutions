@@ -1,0 +1,22 @@
+{
+  "name": "saint-tech-solutions",
+  "version": "1.0.0",
+  "description": "Bespoke Web Design and Digital Engineering for Saint Tech Solutions in Blue and White",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "saint-tech-solutions",
+    "web-design",
+    "web-development",
+    "blue-and-white",
+    "skipiffy-style"
+  ],
+  "author": "Saint Tech Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^10.0.13"
+  }
+}
