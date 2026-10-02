@@ -22,20 +22,40 @@ const projectData = {
     stack: ["Next.js", "TypeScript", "Tailwind", "Sanity CMS", "Stripe", "Framer Motion"]
   },
   "nova-nancy": {
-    title: "Nova Nancy",
-    client: "Fashion House",
+    title: "Nova Nancy Premium Apparel",
+    client: "Nova Nancy Atelier",
     category: "E-Commerce",
-    year: "2025",
-    image: "assets/images/Nova%20Nancy.png",
-    blurb: "An editorial storefront for a Ghanaian couturier. Slow scroll, soft motion, fast checkout.",
-    summary: "A storefront that leads with the lookbook and ends in a quick checkout. Built around seasonal drops, with tools so the in house team can stage a new collection without touching code.",
+    year: "2026",
+    image: "assets/images/nova-nancy.png",
+    liveUrl: "https://nova-nancy-premium-apparel.vercel.app",
+    blurb: "An editorial storefront for a Ghanaian couturier. Bespoke consultation booking, a curated lookbook, and fast checkout.",
+    summary: "A full-stack premium apparel platform built for Nova Nancy Atelier — a Ghanaian fashion house. The site leads with an editorial lookbook, flows into bespoke consultation booking, and ends at a clean checkout. Powered by Supabase for real-time order management and Clerk for seamless authentication.",
     features: [
-      "Headless commerce with custom collection pages",
-      "Lookbook editor with drag and drop ordering",
-      "Stripe and Mobile Money checkout",
-      "Scheduled drops and back in stock alerts"
+      "Bespoke consultation booking with real-time availability",
+      "Editorial lookbook and curated product gallery",
+      "Supabase-powered order management and admin portal",
+      "Clerk authentication for client accounts",
+      "Transactional emails via Resend (order confirmations, consultations)"
     ],
-    stack: ["Next.js", "TypeScript", "Tailwind", "Sanity CMS", "Stripe", "Framer Motion"]
+    stack: ["React", "Vite", "Supabase", "Clerk", "Resend", "Vercel"]
+  },
+  "nova-stitch": {
+    title: "Nova Stitch Studio",
+    client: "Nova Stitch Studio",
+    category: "E-Commerce",
+    year: "2026",
+    image: "assets/images/nova-stitch-studio.jpg",
+    liveUrl: "https://nova-stitch-studio.vercel.app",
+    blurb: "A luxury bespoke tailoring and couture studio platform. Appointments, fabric selection, and client wardrobe management in one place.",
+    summary: "A full-service digital atelier for Nova Stitch Studio, a premium couture and bespoke tailoring house. Clients browse the lookbook, book in-person fittings, select from curated fabric swatches, and track their bespoke orders from first fitting to final delivery.",
+    features: [
+      "Bespoke appointment and fitting scheduler",
+      "Curated fabric and material swatch gallery",
+      "Client order tracker from fitting to delivery",
+      "Editorial couture lookbook",
+      "Admin dashboard for managing orders and client profiles"
+    ],
+    stack: ["React", "Vite", "Supabase", "Resend", "Vercel"]
   },
   nokizzy: {
     title: "NO KIZZY",
@@ -281,11 +301,14 @@ function openProjectModal(projectId) {
       </div>
     </div>
 
-    <div style="border-top: 1px solid hsl(var(--border)); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap: 1rem;">
+    <div style="border-top: 1px solid hsl(var(--border)); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
       <span style="font-size: 0.88rem; color: hsl(var(--muted-foreground));">Want a similar build for your business?</span>
-      <a href="#contact" class="btn-book-now" onclick="closeProjectModal(); prefillService('${data.title} (${data.category})')">
-        Discuss This Project &rarr;
-      </a>
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+        ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;font-weight:600;color:hsl(var(--primary-glow));border:1px solid hsl(var(--primary-glow) / 0.4);padding:0.5rem 1rem;border-radius:6px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='hsl(var(--primary-glow)/0.1)'" onmouseout="this.style.background=''">&#127760; Visit Live Site</a>` : ''}
+        <a href="#contact" class="btn-book-now" onclick="closeProjectModal(); prefillService('${data.title} (${data.category})')">
+          Discuss This Project &rarr;
+        </a>
+      </div>
     </div>
   `;
 
