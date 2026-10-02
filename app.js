@@ -57,21 +57,22 @@ const projectData = {
     ],
     stack: ["React", "Vite", "Supabase", "Resend", "Vercel"]
   },
-  nokizzy: {
-    title: "NO KIZZY",
-    client: "NO KIZZY STORE",
-    category: "E-Commerce",
+  craftconnect: {
+    title: "CraftConnect",
+    client: "CraftConnect Ghana",
+    category: "Industry",
     year: "2026",
-    image: "assets/images/portfolio-fashion.jpg",
-    blurb: "A luxury streetwear store with seasonal drops, accessories and a quick checkout.",
-    summary: "A digital showroom built for a modern West African apparel brand.",
+    image: "assets/images/craftconnect.jpg",
+    blurb: "A marketplace for finding verified local artisans and tradespeople in Ghana. Book a plumber, electrician, or carpenter in minutes.",
+    summary: "CraftConnect is a trusted artisan marketplace built for Ghana. Homeowners and businesses can search, vet, and book verified local tradespeople — plumbers, electricians, carpenters, painters and more — with Paystack-secured payments and real customer reviews. Artisans get a professional profile, booking calendar, and payment dashboard.",
     features: [
-      "Streetwear product catalog and lookbook",
-      "In stock accessories alongside pre order apparel",
-      "Local payments through Paystack & Mobile Money",
-      "Designed for phones first"
+      "Artisan search by trade and location (Accra, Kumasi, etc.)",
+      "Verified artisan profiles with ratings and reviews",
+      "Secure booking and payment via Paystack",
+      "Artisan dashboard with calendar and earnings tracker",
+      "Customer review and dispute system"
     ],
-    stack: ["Shopify", "React", "Tailwind CSS", "Paystack"]
+    stack: ["React", "Vite", "Supabase", "Paystack", "Resend", "Vercel"]
   },
   colina: {
     title: "Colina Legal",
