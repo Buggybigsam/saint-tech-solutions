@@ -90,28 +90,28 @@ const projectData = {
     ],
     stack: ["React", "Vite", "TypeScript", "Tailwind", "Supabase", "Resend"]
   },
-  pomelo: {
-    title: "Pomelo Studio",
-    client: "Beauty Studio",
-    category: "Company",
+  velora: {
+    title: "Velora Fragrances",
+    client: "Luxury Scents",
+    category: "E-Commerce",
     year: "2025",
-    image: "assets/images/portfolio-fashion.jpg",
-    blurb: "Calm and tactile. A beauty studio site built around its booking flow.",
-    summary: "A beauty studio site designed around the moment someone books. Clean type and warm imagery lead straight into a service picker, stylist choice and a calendar that takes a deposit.",
+    image: "assets/images/velora-fragrances.jpg",
+    blurb: "Luxury scents, lasting impressions. An e-commerce experience crafted for signature perfumes.",
+    summary: "A premium fragrance online boutique designed for discerning shoppers. Features luxury product showcases, instant note discovery, customer reviews, and a streamlined checkout flow.",
     features: [
-      "Service list with stylist assignment",
-      "Live availability and deposits",
-      "Automatic SMS and email reminders",
-      "Gift cards and packages"
+      "Curated luxury fragrance catalog and notes guide",
+      "Best sellers showcase with quick-add cart",
+      "Multi-currency support and secure checkout",
+      "Customer fragrance reviews and ratings"
     ],
-    stack: ["Next.js", "Tailwind", "Cal.com", "Stripe", "Twilio"]
+    stack: ["Next.js", "Tailwind", "Shopify API", "Stripe"]
   },
-  bhingengs: {
-    title: "Bhingengs Logistics",
+  buggys: {
+    title: "Buggys Logistics",
     client: "Shipping",
     category: "Industry",
     year: "2024",
-    image: "assets/images/portfolio-logistics.jpg",
+    image: "assets/images/buggys-logistics.jpg",
     blurb: "A corporate site and an operations dashboard in one. Fleet data, tracking and enquiries together.",
     summary: "A corporate site joined to an operations dashboard for a regional logistics company. Visitors see a clean marketing site, while signed in clients get live shipment tracking and quote requests.",
     features: [
@@ -122,21 +122,21 @@ const projectData = {
     ],
     stack: ["React", "TypeScript", "Tailwind", "Supabase", "PostgREST", "Mapbox"]
   },
-  gellurus: {
-    title: "Gellurus",
-    client: "SaaS Startup",
-    category: "Landing",
+  xnow: {
+    title: "Xnow",
+    client: "Urban Streetwear",
+    category: "E-Commerce",
     year: "2025",
-    image: "assets/images/portfolio-saas.jpg",
-    blurb: "A high contrast launch page for a Series A startup. Built to convert cold traffic.",
-    summary: "A launch page for a Series A software company, built to perform on paid traffic. Loads fast, makes its point quickly, and sends every lead straight into the team's CRM.",
+    image: "assets/images/xnow-apparel.jpg",
+    blurb: "Where premium quality meets urban culture. An e-commerce storefront crafted for high-energy lifestyle drops.",
+    summary: "A modern streetwear apparel storefront designed for bold fashion drops. Features category navigation across men, women, and accessories, real-time trending collections, and lightning-fast checkout.",
     features: [
-      "Modular sections for fast changes",
-      "Split testing on the hero and pricing",
-      "Lead capture wired to HubSpot",
-      "Event tracking with PostHog"
+      "Modular product drop collections & trending feed",
+      "Dynamic size and variant selection with quick bag",
+      "Integrated delivery tracking & secure payment gateway",
+      "Mobile-first responsive UX optimized for high-volume launches"
     ],
-    stack: ["Astro", "React islands", "Tailwind", "PostHog", "HubSpot"]
+    stack: ["Next.js", "Tailwind", "Shopify Storefront API", "Stripe"]
   },
   aurum: {
     title: "Aurum Visual Identity",
